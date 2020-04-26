@@ -1,0 +1,39 @@
+.toggle{
+	margin: 10px;
+	text-align: center;
+	margin-top: 300px;
+}
+.Item1{
+	display: none;
+}
+.tog 
+{ 
+        position : relative ; 
+        display : inline-block; 
+        width : 100px; 
+        height : 52px; 
+        background-color: white; 
+        border-radius: 30px; 
+        border: 1px solid gray; 
+        cursor: pointer;
+} 
+.tog:after
+ { 
+        content: ''; 
+        position: absolute; 
+        width: 50px; 
+        height: 50px; 
+        border-radius: 50%; 
+        background-color: white; 
+        left: 4px; 
+        box-shadow:
+        -4px -1px 0 1px rgba(0,0,0,.1),
+        4px 4px 0 rgba(0,0,0,.08);
+        transition:  all 0.5s; 
+    } 
+.Item1:checked + .tog::after { 
+        left : 49px;  
+    } 
+.Item1:checked + .tog { 
+        background: #86d993;
+    } 
